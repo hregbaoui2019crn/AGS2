@@ -1,3 +1,56 @@
-body {
-  background-color: green;
+ul {
+  width: 880px;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+li {
+  background-color: yellow;
+  display: block;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  float: left;
+  box-shadow: grey 5px 5px 10px;
+  background-size: 100%;
+}
+a {
+  height: 200px;
+  display: block;
+}
+/*
+.anulador {
+  clear: both;
+}
+*/
+
+#a01 {
+  background-image: url(img/a01.png);
+
+}
+
+#a02 {
+  background-image: url(img/a02.png);
+
+}
+
+#a03 {
+  background-image: url(img/a03.png);
+
+}
+
+#a04 {
+  background-image: url(img/a04.png);
+}
+
+#a05 {
+  background-image: url(img/a05.png);
+
+}
+
+#a06 {
+  background-image: url(img/a06.png);
 }
