@@ -1,0 +1,79 @@
+body {
+  background-color: rgba(99, 112, 126);
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.icono{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  height: 40%;
+  background-image: url(../img/usuario.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px;
+
+}
+
+.user h1{
+  font-size: 2.5em;
+  color: rgba(242, 246, 245, 1);
+  position: fixed;
+  top: 750px;
+  left: 200px;
+
+}
+
+.code h1{
+  font-size: 1.5em;
+  color: rgba(200, 218, 211, 1);
+  position: fixed;
+  top: 1000px;
+  left: 200px;
+  right: 300px;
+}
+
+.user hr{
+  height: 4px;
+  background-color: rgba(242, 246, 245, 1);
+  position: fixed;
+  top: 870px;
+  left: 200px;
+  right: 250px;
+}
+
+.code hr{
+  height: 4px;
+  background-color: rgba(200, 218, 211, 1);
+  position: fixed;
+  top: 1100px;
+  left: 200px;
+  right: 250px;
+}
+
+.container{
+  position: relative;
+  height: 4rem;
+  width: 10rem;
+  top: 60rem;
+  left: 26rem;
+  border: solid 0.5rem #C8DAD3;
+  border-radius: 1rem;
+
+}
+
+.container p{
+  font-size: 2.5rem;
+  font-family: 'Kanit', sans-serif;
+  color:  white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

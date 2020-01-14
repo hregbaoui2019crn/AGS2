@@ -1,0 +1,76 @@
+body {
+  background-color: rgba(99, 112, 126);
+  margin-top: 9rem;
+}
+
+.mesas{
+text-align: center;
+}
+
+
+.container1{
+width: 500px;
+border-radius: 0.625rem;
+background-image: linear-gradient(to right, #93B5B3, #C8DAD3);
+margin: 5rem;
+margin-bottom: 8rem;
+margin-top: 0;
+font-size: 1.5rem;
+color:  white;
+font-family: 'Kanit', sans-serif;
+float: left;
+}
+
+.atras{
+width: 8rem;
+height: 8rem;
+top: 97px;
+float: right;
+margin-bottom: 7.519rem;
+margin-right: 5rem;
+border-radius: 50%;
+border: solid 0.5rem white;
+color: white;
+}
+
+a:link{
+text-decoration:none;
+}
+
+.atras p{
+color: white;
+font-family: 'Kanit', sans-serif;
+font-size: 5rem;
+margin: auto;
+}
+
+.container{
+width: 13.125rem;
+height: 13.125rem;
+border-radius: 0.625rem;
+background-color: #F2F6F5;
+margin-left: 5rem;
+margin-bottom: 5rem;
+font-family: 'Kanit', sans-serif;
+display: inline-block;
+}
+
+p{
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem;
+  color: #63707E;
+}
+
+.ocupado{
+  opacity: 0.3;
+}
+
+.seleccion{
+  border: solid 0.5rem white;
+  background-color: #63707E;
+}
+
+.seleccion p{
+  color: white;
+}
