@@ -1,0 +1,150 @@
+.flor{
+  transform: scale(1);
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  animation: rotacio 3s infinite;
+  transform-origin: center center;
+  /*tipos de acceleracion*/
+  animation-timing-function: linear;
+}
+
+.petal{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: green;
+  border-radius: 0 100px 0 100px;
+  transform: rotate(0deg);
+  transform-origin: right bottom;
+  border: solid yellow 1px;
+  animation-name: aniflor;
+/*
+  duracion: animation-duration: 2s;
+  cuando empieza: animation-delay: 2s;
+  repeticiones: animation-iteration-count: infinite;
+  trayectoria de la animacion: animation-direction: alternate-reverse;
+  */
+  animation: aniflor 2s infinite alternate-reverse;
+
+
+}
+
+#p01{
+  transform: rotate(0deg);
+}
+
+#p02{
+  transform: rotate(30deg);
+}
+
+#p03{
+  transform: rotate(60deg);
+}
+
+#p04{
+  transform: rotate(90deg);
+}
+
+#p05{
+  transform: rotate(120deg);
+}
+
+#p06{
+  transform: rotate(150deg);
+}
+
+#p07{
+  transform: rotate(180deg);
+}
+
+#p08{
+  transform: rotate(210deg);
+}
+
+#p09{
+  transform: rotate(240deg);
+}
+
+#p10{
+  transform: rotate(270deg);
+}
+
+#p11{
+  transform: rotate(300deg);
+}
+
+#p12{
+  transform: rotate(330deg);
+}
+
+#cor{
+  width: 50px;
+  height: 50px;
+  background: orange;
+  position: absolute;
+  border-radius: 50%;
+  top: 75px;
+  left: 75px;
+}
+
+
+
+@keyframes aniflor {
+  0%{
+    background: pink;
+  }
+
+  50%{
+  background: purple;
+  }
+
+  100%{
+  background: blue;
+  }
+}
+
+@keyframes rotacio {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+  transform: rotate(360deg);
+  }
+}
+
+.esquerra{
+  margin: 100px auto 100px 0;
+}
+
+.dreta{
+  margin: 100px 0 100px auto;
+}
+
+.centre{
+  margin: 100px auto;
+}
+
+.corazo{
+  transform: scale(1);
+}
+.love{
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background: red;
+  border-radius: 50% 50% 0% 0%;
+  transform: rotate(45deg);
+  transform-origin: 100px 50px;
+  }
+
+  .love2{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background: blue;
+    border-radius: 50% 50% 0% 0%;
+    transform: rotate(-45deg);
+    transform-origin: 50px 100px;
+  }

@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(99, 112, 126);
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.contingut{
+  position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-image: url(../img/bar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 450px;
+}
+
+.contingut h1{
+  margin-top: 30%;
+  text-align: center;
+  font-size: 6em;
+  line-height: 5em;
+  color: rgba(242, 246, 245, 1);
+}

@@ -1,0 +1,43 @@
+body{
+  margin: 10px;
+  padding: 300px;
+}
+
+.corazon{
+  animation: beating 1s ease infinite;
+}
+
+.love{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background: red;
+  border-radius: 50px 50px 0% 0%;
+  transform: rotate(45deg);
+  transform-origin: 50px 100px;
+  }
+
+  .love2{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background: red
+    ;
+    border-radius: 50px 50px 0% 0%;
+    transform: rotate(-45deg);
+    transform-origin: 50px 100px;
+
+  }
+
+
+  @keyframes beating {
+  0% {
+  	transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+  	transform: scale(1);
+  }
+}
