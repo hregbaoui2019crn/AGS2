@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<style>
+
+  *{
+    position: relative;
+    font-family: helvetica, sans-serif;
+    text-align: center;
+  }
+  ul{
+    width: 960px;
+    margin: auto;
+  }
+
+  li{
+  height: 420px;
+  width: 170px;
+  margin: 4px;
+  display: block;
+  float: left;
+  font-size: 14px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), white;
+  background-position: 0px 0, 5px 5px;
+  background-size: 10px 10px, 10px 10px;
+  }
+
+  h1{
+  border: 10px solid turquoise;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: navy;
+  color: turquoise;
+  line-height: 100px;
+  font-size: 72px;
+  }
+
+  .desenfocar img{
+    -webkit-filter: blur(10px);
+  }
+
+  .gris img{
+    -webkit-filter: grayscale(100%);
+  }
+
+  .ombra img{
+    -webkit-filter: drop-shadow(6px 6px 6px orange);
+  }
+
+  .sepia img{
+    -webkit-filter: sepia(100%);
+  }
+
+  .lluminositat img{
+    -webkit-filter: brightness(200%);
+  }
+
+  .contrast img{
+    -webkit-filter: contrast(40%);
+  }
+
+  .to img{
+    -webkit-filter: hue-rotate(90deg);
+  }
+
+  .invertit img{
+    -webkit-filter: invert(100%);
+  }
+
+  .saturat img{
+    -webkit-filter: saturate(200%);
+  }
+
+  .opacitat img{
+    -webkit-filter: opacity(40%);
+  }
+
+</style>
+
+</head>
+<body>
+  <h1>Ps</h1>
+  <ul>
+    <li class="desenfocar">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Desenfocar</h2>
+      <input type="range" min="0" max="100">
+      <p></p>
+    </li>
+
+    <li class="gris">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Grisos</h2>
+      <input type="range" min="0" max="100">
+      <p></p>
+    </li>
+
+    <li class="ombra">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Ombra</h2>
+      <input type="range">
+      <p></p>
+    </li>
+
+    <li class="sepia">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Sèpia</h2>
+      <input type="range" min="0" max="100">
+      <p></p>
+    </li>
+
+    <li class="lluminositat">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Lluminositat</h2>
+      <input type="range" min="0" max="1000">
+      <p></p>
+    </li>
+
+    <li class="contrast">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Contrast</h2>
+      <input type="range" min="0" max="500">
+      <p></p>
+    </li>
+
+    <li class="to">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>To</h2>
+      <input type="range" min="0" max="360">
+      <p></p>
+    </li>
+
+    <li class="invertit">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Invertit</h2>
+      <input type="range" min="0" max="100">
+      <p></p>
+    </li>
+
+    <li class="saturat">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Saturat</h2>
+      <input type="range" min="0" max="1000">
+      <p></p>
+    </li>
+
+    <li class="opacitat">
+      <img src="https://i1.wp.com/www.aserhco.com/wp-content/uploads/2015/07/kiwi_PNG4035.png?fit=700%2C700&ssl=1"  width="100%" alt="">
+      <h2>Opacitat</h2>
+      <input type="range">
+      <p></p>
+    </li>
+  </ul>
+
+  <script type="text/javascript" src="imatge.js">
+
+  </script>
+</body>
+</html>
