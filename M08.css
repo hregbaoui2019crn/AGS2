@@ -1,0 +1,98 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("img/fondo.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+ul {
+  width: 880px;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+li {
+  background-color: yellow;
+  display: block;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  float: left;
+  box-shadow: grey 5px 5px 10px;
+  background-size: 100%;
+	border-radius: 30%;
+}
+a {
+  height: 200px;
+  display: block;
+  text-decoration: none;
+  font: bold 20px/1.5 arial, helvetica, sans-serif;
+  color: white;
+  text-shadow: 0 0px 5px black;
+}
+
+
+#a01 {
+background-image: url("img8/a01.png");
+}
+
+#a02 {
+background-image: url("img8/a02.png");
+}
+
+#a03 {
+background-image: url("img8/a03.png");
+}
+
+#a04 {
+background-image: url("img8/a04.png");
+}
+
+#a05 {
+background-image: url("img8/a05.png");
+}
+
+#a06 {
+  background-image: url("img8/a06.png");
+}
+
+#a07 {
+  background-image: url("img8/a07.png");
+}
+#a08 {
+  background-image: url("img8/a08.png");
+}
+#a09 {
+  background-image: url("img8/a09.png");
+}
+#a10 {
+  background-image: url("img8/a10.png");
+}
+#a11 {
+  background-image: url("img8/a11.png");
+}
+#a12 {
+  background-image: url("img8/a12.png");
+}
+
+#a13 {
+  background-image: url("img8/a13.png");
+}
+
+#a14 {
+  background-image: url("img8/a14.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+#a15 {
+  background-image: url("img8/a15.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}

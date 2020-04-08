@@ -1,0 +1,230 @@
+body {
+  margin: 2rem;
+  padding: 0;
+}
+
+div {
+  overflow: visible;
+  position: relative;
+}
+
+.esquerra {
+  float: left;
+  clear: left;
+}
+
+.dreta {
+  float: right;
+  clear: right;
+}
+
+.cap {
+  width: 500px;
+  height: 700px;
+  background-color: #F1C282;
+  margin: 0 auto;
+  border-radius: 100px 100px 200px 10px;
+}
+
+.pel {
+  height: 200px;
+  background-color: black;
+  border-radius: 100px 100px 0 0;
+}
+
+
+.ulls {
+  height: 320px;
+  background-color:;
+  clear: both;
+}
+
+.celles {
+  height: 40px;
+  background-color:;
+  clear: both;
+  margin: 0;
+}
+
+.cella {
+  background-color:;
+  width: 180px;
+  height: 50px;
+  border-radius: 50% 0 0 0;
+  position: relative;
+  top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: solid 30px black;
+}
+
+.parpelles{
+  height: 60px;
+  background-color:;
+  margin:50px;
+}
+.parpella{
+  height: 70px;
+  background-color:white;
+  width: 130px;
+  border-radius: 50% 0 50% 0;
+  position: relative;
+  border-top: solid 30px black;
+  top: 20px;
+}
+
+.pestanyes {
+  height: 100px;
+  background-color:;
+  margin: 0 75px;
+
+}
+
+.pestanya {
+  height: 60px;
+}
+
+.irisos {
+  height: 50px;
+  background-color: ;
+}
+
+.iris {
+  background-color: #3E2300 ;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  position: relative;
+  top: -150px;
+  margin-left: 120px;
+  margin-right: 55px;
+
+}
+
+.pupiles {
+  height: 50px;
+  background-color:;
+}
+
+.pupila {
+  background-color: black;
+  opacity: 0.7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: -190px;
+  margin-left: 145px;
+  margin-right: 60px;
+}
+
+.orelles {
+  height: 100px;
+  background-color:;
+}
+
+.orella {
+  height: 100px;
+}
+
+.nas {
+  background-image: linear-gradient(to right, transparent, #EEB15A);
+  height: 40px;
+  width: 50px;
+  position: relative;
+  top: -120px;
+  margin-left: 290px;
+  border-radius: 50% ;
+}
+
+.foratnas {
+  height: 5px;
+  background-color: ;
+}
+
+.boca {
+  background-color: #DC0E0E;
+  height: 40px;
+  width: 45px;
+  position: relative;
+  top: -80px;
+  margin-left: 300px;
+  border-radius: 50% ;
+  z-index: 2;
+}
+
+.boca::before {
+  content: "";
+  position: relative;
+  top: -15px;
+  right: 70px;
+  border-left: 5rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 8rem solid transparent;
+  border-bottom: 2.3rem solid #DC0E0E;
+  border-radius: 0% 100% 0% 0%;
+}
+
+.boca1 {
+  background-color: #F02222;
+  height: 30px;
+  width: 37px;
+  position: relative;
+  top: -90px;
+  margin-left: 300px;
+  border-radius: 50% ;
+  transform: rotate(13deg);
+  z-index: 1;
+}
+
+.boca1::before {
+  content: "";
+  position: relative;
+  top: -16px;
+  right: 70px;
+  border-left: 4.5rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 2rem solid transparent;
+  border-bottom: 1.75rem solid #F02222;
+  border-radius: 0% 100% 0% 0%;
+}
+
+
+
+.hijab{
+  background-color: black;
+  height: 900px;
+  width: 500px;
+  position: relative;
+  top: -200px;
+  left: -150px;
+  border-radius: 20% 0 30% 30% ;
+  z-index: -1;
+
+}
+
+.galtes {
+  height: 100px;
+    position: absolute;
+}
+
+.galta.esquerra {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(#F87676 00%, #F1C282 60%);
+  opacity: 0.7;
+  border-radius: 50%;
+  position: relative;
+  top: -250px;
+  left: 10px;
+}
+
+.galta.dreta {
+  width: 140px;
+  height: 200px;
+  background: radial-gradient(#F87676 00%, #F1C282 60%);
+  opacity: 0.7;
+  border-radius: 50%;
+  position: relative;
+  top: -250px;
+  left: 160px;
+}
