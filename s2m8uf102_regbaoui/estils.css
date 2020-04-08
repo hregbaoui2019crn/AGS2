@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #C3F8AA;
+}
+
+div {
+    background-image: url(img/fonsgris.png);
+    background-repeat: no-repeat;
+}
+#contenidor {
+    background-image: none;
+    width: 675px;
+    margin: 0 auto;
+}
