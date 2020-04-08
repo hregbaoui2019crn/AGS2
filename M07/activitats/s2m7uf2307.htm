@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <style>
+
+      body{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 120px;
+        line-height: 240px;
+        color: white;
+      }
+
+      #verde{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 20px;
+      }
+
+      #naranja{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: orange;
+        margin: 20px;
+
+      }
+
+      #rojo{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        margin: 20px;
+
+      }
+
+      ul{
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style-type: none;
+      }
+
+      #txt{
+        width: 650px;
+        height: 900px;
+        padding: 50px;
+        margin: 0;
+        padding: 0;
+        float: left;
+        overflow: hidden;
+      }
+
+
+
+
+
+      </style>
+
+  </head>
+
+
+
+  <body>
+    <ul>
+      <li id="verde"></li>
+      <li id="naranja"></li>
+      <li id="rojo"></li>
+    </ul>
+
+    <p id="txt"></p>
+
+
+
+    <script type="text/javascript" language="javascript">
+      //Event
+      document.getElementById('verde').addEventListener('click', verde);
+      document.getElementById('naranja').addEventListener('click', naranja);
+      document.getElementById('rojo').addEventListener('click', rojo);
+
+      //crear functions
+      function verde(){
+        document.body.style.backgroundColor='green';
+        document.getElementById('txt').innerHTML="ENDAVANT";
+        document.getElementById('verde').style.border="solid 10px white";
+        document.getElementById('naranja').style.border="0";
+        document.getElementById('rojo').style.border="0";
+        document.getElementById('verde').style.boxShadow="insert 20px 20px 20px rgba(255,255,0,0.5)";
+      }
+
+      function naranja(){
+        document.body.style.backgroundColor='orange';
+        document.getElementById('txt').innerHTML="<br/>PRECAUCIO";
+        document.getElementById('naranja').style.border="solid 10px white";
+        document.getElementById('verde').style.border="0";
+        document.getElementById('rojo').style.border="0";
+      }
+
+      function rojo(){
+        document.body.style.backgroundColor='red';
+        document.getElementById('txt').innerHTML="<br/><br/>STOP";
+        document.getElementById('rojo').style.border="solid 10px white";
+        document.getElementById('naranja').style.border="0";
+        document.getElementById('verde').style.border="0";
+      }
+
+
+    </script>
+  </body>
+</html>
