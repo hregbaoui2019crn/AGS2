@@ -1,0 +1,78 @@
+body{
+font-family: bold Helvetica, Arial, Sans-serif;
+background: linear-gradient(45deg, ivory 50%, pink 50%);
+}
+
+
+h1{
+text-decoration: none;
+font-size: 4rem;
+text-align: center;
+}
+
+.uno{
+  height: 589px;
+}
+
+.dos img{
+  height: 204px;
+
+}
+
+p{
+  height: 40px;
+  background: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.pulp:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.taxi:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.bond:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+
+.ghost:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.bean:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.back:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.rider:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.team:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.break:hover {
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s;
+}
+
+.pie{
+  height: 220px;
+}
