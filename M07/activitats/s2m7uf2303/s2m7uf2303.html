@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <style>
+
+        body{
+          font-size:40px;
+          font-family: helvetica;
+        }
+
+      </style>
+
+  </head>
+
+
+
+  <body>
+    <script type="text/javascript" language="javascript">
+
+//Declaracio variabla
+
+// El que tenim guardat a la nostra base de dades
+var sortir= confirm ("segur que vols tancar l'aplicació?");
+
+//comparem unes dades amb unes altres
+// &= and  |= or
+    if (sortir == true) {
+      document.write("Tancant l'aplicació");
+      document.body.style.backgroundColor="#333";
+      document.body.style.color="#FFF";
+    }
+
+    else {
+      document.write("Continuar");
+      document.body.style.backgroundColor="#555";
+      document.body.style.color="#65af8d";
+    }
+
+    </script>
+  </body>
+</html>

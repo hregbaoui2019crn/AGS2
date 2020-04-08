@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilsvid.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <div id="contenidor">
+    <div id="gran">
+      <video id="video" src="vid/perro.mp4" autoplay controls></video>
+    </div>
+
+    <div id="petit">
+      <video class="vi" src="vid/blanca.mp4"></video>
+      <video class="vi" src="vid/husky.mp4"></video>
+      <video class="vi" src="vid/ladra.mp4"></video>
+      <video class="vi" src="vid/perro.mp4"></video>
+    </div>
+  </div>
+
+
+</body>
+
+<script type="text/javascript">
+
+
+var imatge = document.getElementsByClassName('vi');
+var imgran = document.getElementById('video');
+
+
+
+imatge[0].addEventListener('click',imatge0);
+imatge[1].addEventListener('click',imatge1);
+imatge[2].addEventListener('click',imatge2);
+imatge[3].addEventListener('click',imatge3);
+imatge[4].addEventListener('click',imatge4);
+
+function imatge0(){
+  imgran.src=imatge[0].src;
+}
+
+function imatge1(){
+  imgran.src=imatge[1].src;
+}
+
+function imatge2(){
+  imgran.src=imatge[2].src;
+}
+
+function imatge3(){
+  imgran.src=imatge[3].src;
+}
+
+function imatge4(){
+  imgran.src=imatge[4].src;
+}
+
+
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+#contenidor{
+height: ;
+width: ;
+}
+
+
+#gran img{
+  height: ;
+  width: 65%;
+  display:block;
+  margin:auto;
+}
+
+#petit img{
+  height: ;
+  width: 18%;
+  margin: 5px;
+}
+#petit {
+  display:block;
+  text-align: center;
+}
+
+
+ul {
+  text-align: center;
+}
+
+li {
+display: inline-block;
+font-size: 144px;
+font-weight: 900px;
+}

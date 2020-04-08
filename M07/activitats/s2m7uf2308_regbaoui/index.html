@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="estils.css" />
+  </head>
+  <body>
+    <div class="contenidor">
+      <div class="tema3" id="chat">
+        <div class="bocata1 esquerra default chate"></div>
+
+        <div class="bocata2 dreta default chatd"></div>
+
+        <div class="boton"></div>
+      </div>
+
+      <div class="tema" id="default">
+        <div class="bocata1 esquerra default" id="chate"></div>
+
+        <div class="bocata2 dreta default" id="chatd"></div>
+
+        <div class="boton"></div>
+      </div>
+
+      <div class="tema" id="mono">
+        <div class="bocata1 esquerra mono"></div>
+
+        <div class="bocata2 dreta mono"></div>
+
+        <div class="boton"></div>
+      </div>
+
+      <div class="tema" id="dark">
+        <div class="bocata1 esquerra dark"></div>
+
+        <div class="bocata2 dreta dark"></div>
+
+        <div class="boton"></div>
+      </div>
+
+      <div class="tema" id="artic">
+        <div class="bocata1 esquerra artic"></div>
+
+        <div class="bocata2 dreta artic"></div>
+
+        <div class="boton"></div>
+      </div>
+    </div>
+
+    <div id="bolitas1">
+      <div class="bola1"></div>
+      <div class="bola1"></div>
+      <div class="bola1"></div>
+      <div class="bola1"></div>
+      <div class="bola1"></div>
+    </div>
+
+    <div id="contenedor1">
+      <div class="bola" id="uno"></div>
+      <div class="bola" id="dos"></div>
+      <div class="bola" id="tres"></div>
+      <div class="bola" id="cuatro"></div>
+      <div class="bola" id="cinco"></div>
+      <div class="bola" id="seis"></div>
+      <div class="bola" id="siete"></div>
+      <div class="bola" id="ocho"></div>
+      <div class="bola" id="nueve"></div>
+      <div class="bola" id="diez"></div>
+      <input type="color" id="multi" value="#DCDCDC">
+    </div>
+
+    <div id="contenedor2">
+      <div class="bola2" id="uno2"></div>
+      <div class="bola2" id="dos2"></div>
+      <div class="bola2" id="tres2"></div>
+      <div class="bola2" id="cuatro2"></div>
+      <div class="bola2" id="cinco2"></div>
+      <div class="bola2" id="seis2"></div>
+      <div class="bola2" id="siete2"></div>
+      <div class="bola2" id="ocho2"></div>
+      <div class="bola2" id="nueve2"></div>
+      <div class="bola2" id="diez2"></div>
+      <input type="color" id="multi2" value="#DCDCDC">
+    </div>
+
+    <div id="contenedor3">
+      <div class="bola3" id="uno3"></div>
+      <div class="bola3" id="dos3"></div>
+      <div class="bola3" id="tres3"></div>
+      <div class="bola3" id="cuatro3"></div>
+      <div class="bola3" id="cinco3"></div>
+      <div class="bola3" id="seis3"></div>
+      <div class="bola3" id="siete3"></div>
+      <div class="bola3" id="ocho3"></div>
+      <div class="bola3" id="nueve3"></div>
+      <div class="bola3" id="diez3"></div>
+      <input type="color" id="multi3" value="#DCDCDC">
+    </div>
+
+    <script type="text/javascript" language="javascript">
+    var color = [
+      "#DBD56E",
+      "#88AB75",
+      "#2D93AD",
+      "#7D7C84",
+      "#DE8F6E",
+      "#45F0DF",
+      "#FB5012",
+      "#CBBAED",
+      "#E9DF00",
+      "#136F63"
+    ];
+
+
+    var bola=document.getElementsByClassName('bola');
+    var bola2=document.getElementsByClassName('bola2');
+    var bola3=document.getElementsByClassName('bola3');
+
+    for (var k =0; k < bola2.length; k++){
+      bola2[k].style.backgroundColor=color[k];
+    }
+    for (var k=0; k < bola3.length; k++){
+      bola3[k].style.backgroundColor=color[k];
+    }
+    for (var k = 0; k < bola.length; k++){
+      bola[k].style.backgroundColor=color[k];
+    }
+
+    var chate=document.getElementsByClassName('chate');
+    var chatd=document.getElementsByClassName('chatd');
+    var bola=document.getElementsByClassName('bola');
+
+    //event
+    document.getElementById('default').addEventListener('click',def);
+    document.getElementById('mono').addEventListener('click',mono);
+    document.getElementById('dark').addEventListener('click',dark);
+    document.getElementById('artic').addEventListener('click',artic);
+
+    //mono
+    document.getElementById('uno').addEventListener('click',lima);
+    document.getElementById('dos').addEventListener('click',oliva);
+    document.getElementById('tres').addEventListener('click',acua);
+    document.getElementById('cuatro').addEventListener('click',gris);
+    document.getElementById('cinco').addEventListener('click',salmon);
+    document.getElementById('seis').addEventListener('click',turquesa);
+    document.getElementById('siete').addEventListener('click',naranja);
+    document.getElementById('ocho').addEventListener('click',lavanda);
+    document.getElementById('nueve').addEventListener('click',amarillo);
+    document.getElementById('diez').addEventListener('click',verde);
+
+    //dark
+    document.getElementById('uno2').addEventListener('click',lima2);
+    document.getElementById('dos2').addEventListener('click',oliva2);
+    document.getElementById('tres2').addEventListener('click',acua2);
+    document.getElementById('cuatro2').addEventListener('click',gris2);
+    document.getElementById('cinco2').addEventListener('click',salmon2);
+    document.getElementById('seis2').addEventListener('click',turquesa2);
+    document.getElementById('siete2').addEventListener('click',naranja2);
+    document.getElementById('ocho2').addEventListener('click',lavanda2);
+    document.getElementById('nueve2').addEventListener('click',amarillo2);
+    document.getElementById('diez2').addEventListener('click',verde2);
+
+    //artic
+    document.getElementById('uno3').addEventListener('click',lima3);
+    document.getElementById('dos3').addEventListener('click',oliva3);
+    document.getElementById('tres3').addEventListener('click',acua3);
+    document.getElementById('cuatro3').addEventListener('click',gris3);
+    document.getElementById('cinco3').addEventListener('click',salmon3);
+    document.getElementById('seis3').addEventListener('click',turquesa3);
+    document.getElementById('siete3').addEventListener('click',naranja3);
+    document.getElementById('ocho3').addEventListener('click',lavanda3);
+    document.getElementById('nueve3').addEventListener('click',amarillo3);
+    document.getElementById('diez3').addEventListener('click',verde3);
+
+
+
+
+
+    //crear funcion
+
+    function def(){
+      document.getElementById("chat").style.backgroundColor="#EBEEED";
+      chate[0].style.backgroundColor="#fff";
+      chatd[0].style.backgroundColor="#B5D8D1";
+      document.getElementById("contenedor1").style.display="none";
+      document.getElementById("contenedor2").style.display="none";
+      document.getElementById("contenedor3").style.display="none";
+    }
+
+    function mono(){
+      document.getElementById("chat").style.backgroundColor="#999CF2";
+      chate[0].style.backgroundColor="#fff";
+      chatd[0].style.backgroundColor="#CBCCF3";
+      document.getElementById("contenedor1").style.display="block";
+      document.getElementById("contenedor2").style.display="none";
+      document.getElementById("contenedor3").style.display="none";
+    }
+
+    function dark(){
+      document.getElementById("chat").style.backgroundColor="#070825";
+      chate[0].style.backgroundColor="#363996";
+      chatd[0].style.backgroundColor="#999CF2";
+      document.getElementById("contenedor1").style.display="none";
+      document.getElementById("contenedor2").style.display="block";
+      document.getElementById("contenedor3").style.display="none";
+    }
+
+    function artic(){
+      document.getElementById("chat").style.backgroundColor="#F0EAEA";
+      chate[0].style.backgroundColor="#B0C4DE";
+      chatd[0].style.backgroundColor="ROYALBLUE";
+      document.getElementById("contenedor3").style.display="block";
+      document.getElementById("contenedor2").style.display="none";
+      document.getElementById("contenedor1").style.display="none";
+    }
+
+
+
+
+      //mono
+    function lima(){
+    document.getElementById('chat').style.backgroundColor='#DBD56E';
+    document.getElementById('mono').style.backgroundColor='#DBD56E';
+    }
+
+    function oliva(){
+    document.getElementById('chat').style.backgroundColor='#88AB75';
+    document.getElementById('mono').style.backgroundColor='#88AB75';
+    }
+
+    function acua(){
+    document.getElementById('chat').style.backgroundColor='#2D93AD';
+    document.getElementById('mono').style.backgroundColor='#2D93AD';
+    }
+
+    function gris(){
+    document.getElementById('chat').style.backgroundColor='#7D7C84';
+    document.getElementById('mono').style.backgroundColor='#7D7C84';
+    }
+
+    function salmon(){
+    document.getElementById('chat').style.backgroundColor='#DE8F6E';
+    document.getElementById('mono').style.backgroundColor='#DE8F6E';
+    }
+
+    function turquesa(){
+    document.getElementById('chat').style.backgroundColor='#45F0DF';
+    document.getElementById('mono').style.backgroundColor='#45F0DF';
+    }
+
+    function naranja(){
+    document.getElementById('chat').style.backgroundColor='#FB5012';
+    document.getElementById('mono').style.backgroundColor='#FB5012';
+    }
+
+    function lavanda(){
+    document.getElementById('chat').style.backgroundColor='#CBBAED';
+    document.getElementById('mono').style.backgroundColor='#CBBAED';
+    }
+
+    function amarillo(){
+    document.getElementById('chat').style.backgroundColor='#E9DF00';
+    document.getElementById('mono').style.backgroundColor='#E9DF00';
+    }
+
+    function verde(){
+    document.getElementById('chat').style.backgroundColor='#136F63';
+    document.getElementById('mono').style.backgroundColor='#136F63';
+    }
+
+    //dark
+    function lima2(){
+    document.getElementById('chat').style.backgroundColor='#DBD56E';
+    document.getElementById('dark').style.backgroundColor='#DBD56E';
+    }
+
+    function oliva2(){
+    document.getElementById('chat').style.backgroundColor='#88AB75';
+    document.getElementById('dark').style.backgroundColor='#88AB75';
+    }
+
+    function acua2(){
+    document.getElementById('chat').style.backgroundColor='#2D93AD';
+    document.getElementById('dark').style.backgroundColor='#2D93AD';
+    }
+
+    function gris2(){
+    document.getElementById('chat').style.backgroundColor='#7D7C84';
+    document.getElementById('dark').style.backgroundColor='#7D7C84';
+    }
+
+    function salmon2(){
+    document.getElementById('chat').style.backgroundColor='#DE8F6E';
+    document.getElementById('dark').style.backgroundColor='#DE8F6E';
+    }
+
+    function turquesa2(){
+    document.getElementById('chat').style.backgroundColor='#45F0DF';
+    document.getElementById('dark').style.backgroundColor='#45F0DF';
+    }
+
+    function naranja2(){
+    document.getElementById('chat').style.backgroundColor='#FB5012';
+    document.getElementById('dark').style.backgroundColor='#FB5012';
+    }
+
+    function lavanda2(){
+    document.getElementById('chat').style.backgroundColor='#CBBAED';
+    document.getElementById('dark').style.backgroundColor='#CBBAED';
+    }
+
+    function amarillo2(){
+    document.getElementById('chat').style.backgroundColor='#E9DF00';
+    document.getElementById('dark').style.backgroundColor='#E9DF00';
+    }
+
+    function verde2(){
+    document.getElementById('chat').style.backgroundColor='#136F63';
+    document.getElementById('dark').style.backgroundColor='#136F63';
+    }
+
+    //artic
+    function lima3(){
+    document.getElementById('chat').style.backgroundColor='#DBD56E';
+    document.getElementById('artic').style.backgroundColor='#DBD56E';
+    }
+
+    function oliva3(){
+    document.getElementById('chat').style.backgroundColor='#88AB75';
+    document.getElementById('artic').style.backgroundColor='#88AB75';
+    }
+
+    function acua3(){
+    document.getElementById('chat').style.backgroundColor='#2D93AD';
+    document.getElementById('artic').style.backgroundColor='#2D93AD';
+    }
+
+    function gris3(){
+    document.getElementById('chat').style.backgroundColor='#7D7C84';
+    document.getElementById('artic').style.backgroundColor='#7D7C84';
+    }
+
+    function salmon3(){
+    document.getElementById('chat').style.backgroundColor='#DE8F6E';
+    document.getElementById('artic').style.backgroundColor='#DE8F6E';
+    }
+
+    function turquesa3(){
+    document.getElementById('chat').style.backgroundColor='#45F0DF';
+    document.getElementById('artic').style.backgroundColor='#45F0DF';
+    }
+
+    function naranja3(){
+    document.getElementById('chat').style.backgroundColor='#FB5012';
+    document.getElementById('artic').style.backgroundColor='#FB5012';
+    }
+
+    function lavanda3(){
+    document.getElementById('chat').style.backgroundColor='#CBBAED';
+    document.getElementById('artic').style.backgroundColor='#CBBAED';
+    }
+
+    function amarillo3(){
+    document.getElementById('chat').style.backgroundColor='#E9DF00';
+    document.getElementById('artic').style.backgroundColor='#E9DF00';
+    }
+
+    function verde3(){
+    document.getElementById('chat').style.backgroundColor='#136F63';
+    document.getElementById('artic').style.backgroundColor='#136F63';
+    }
+
+
+    <!-- input mono -->
+    document.getElementById('multi').addEventListener('input',canvi);
+
+    function canvi(){
+      document.getElementById('mono').style.background=multi.value;
+      document.getElementById('chat').style.background=multi.value;
+    }
+
+
+
+    <!-- input dark -->
+    document.getElementById('multi2').addEventListener('input',canvi2);
+
+    function canvi2(){
+      document.getElementById('dark').style.background=multi2.value;
+      document.getElementById('chat').style.background=multi2.value;
+    }
+
+
+
+    <!-- input artic -->
+    document.getElementById('multi3').addEventListener('input',canvi3);
+
+    function canvi3(){
+      document.getElementById('artic').style.background=multi3.value;
+      document.getElementById('chat').style.background=multi3.value;
+    }
+
+
+		</script>
+  </body>
+</html>

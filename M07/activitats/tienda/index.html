@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estils.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <div id="contenidor">
+    <ul>
+      <li id="enrere"><</li>
+      <li id="num"></li>
+      <li id="endavant">></li>
+    </ul>
+  </div>
+
+
+<div id="gran">
+  <img id="imgran" src="img/imatge1.jpg">
+</div>
+
+  <div id="petit">
+    <img class="imatge" src="img/imatge2.jpg">
+    <img class="imatge" src="img/imatge3.jpg">
+    <img class="imatge" src="img/imatge4.jpg">
+    <img class="imatge" src="img/imatge5.jpg">
+    <img class="imatge" src="img/imatge1.jpg">
+  </div>
+
+</body>
+
+<script type="text/javascript">
+
+document.getElementById('enrere').addEventListener('click',enrere);
+document.getElementById('endavant').addEventListener('click',endavant);
+
+var num=document.getElementById('num');
+var i=0;
+
+function enrere(){
+  if (i==0) {i=imatge.length-1;}
+  else {i--;}
+  num.innerHTML=i;
+  imgran.src=imatge[i].src;
+}
+
+function endavant(){
+  if (i==imatge.length-1) {i=0;}
+  else {i++;}
+  num.innerHTML=i;
+  imgran.src=imatge[i].src;
+}
+
+var imatge = document.getElementsByClassName('imatge');
+var imgran = document.getElementById('imgran');
+
+
+
+imatge[0].addEventListener('mouseover',imatge0);
+imatge[1].addEventListener('mouseover',imatge1);
+imatge[2].addEventListener('mouseover',imatge2);
+imatge[3].addEventListener('mouseover',imatge3);
+imatge[4].addEventListener('mouseover',imatge4);
+
+function imatge0(){
+  imgran.src=imatge[0].src;
+}
+
+function imatge1(){
+  imgran.src=imatge[1].src;
+}
+
+function imatge2(){
+  imgran.src=imatge[2].src;
+}
+
+function imatge3(){
+  imgran.src=imatge[3].src;
+}
+
+function imatge4(){
+  imgran.src=imatge[4].src;
+}
+
+
+</script>
+
+</html>

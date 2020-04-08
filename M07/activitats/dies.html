@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style>
+    body{
+      font-size: 36px;
+    }
+
+    .bola{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: solid 3px black;
+      margin: 5px;
+      display: inline-block;
+    }
+  </style>
+
+  <body>
+
+    <h1>titulo 1</h1>
+    <h1>titulo 2</h1>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+    <script type="text/javascript">
+
+    var colors=["yellow", "blue", "purple", "pink", "black", " orange", "green"];
+    document.body.style.backgroundColor=colors[5];
+
+      //Variable matricial que guarda totes les boles
+      var bola=document.getElementsByClassName('bola');
+      bola[0].style.backgroundColor=colors[0];
+      bola[1].style.backgroundColor=colors[1];
+      bola[2].style.backgroundColor=colors[2];
+      bola[3].style.backgroundColor=colors[3];
+
+      for (var k = 0; k < bola.length; k++) {
+        bola[k].style.backgroundColor=colors[0];
+      }
+
+      var titulo=document.getElementsByTagName('h1');
+      titulo[0].style.color="red";
+
+      //Variable matricial que guarda tots els parágrafs//
+      var paragraf=document.getElementsByTagName('p');
+      paragraf[2].style.fontStyle="italic";
+
+      var dies=["dilluns", "dimarts", "dimecres", "dijous", "divendres", " dissabte", "diumenge"];
+      document.write(dies[6]);
+
+      var x=10;
+      while (x>0) {
+        document.write(x+"</br>");
+        x--;
+      }
+
+      for (var i = 0; i < 10; i++) {
+      document.write(i+"</br>");
+        }
+
+      for (var j = 0; j < dies.length; j++) {
+      document.write(dies[j]+"</br>");
+      }
+
+
+    </script>
+
+  </body>
+</html>
