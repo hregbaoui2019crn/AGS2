@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="red">
+  <meta name="theme-color" content="red">
+  <meta name="msapplication-navbutton-color" content="red">
+  <link rel="icon" sizes="192x92" href="img/logo.png">
+  <link rel="icon" sizes="512x512" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
+  <title>AppMood</title>
+</head>
+<body>
+  <div class="medio">
+  	<img class="fondo" src="img/.png" alt="">
+  		<hr class="uno">
+  		<hr class="dos">
+  		<hr class="tres">
+  		<hr class="cuatro">
+  </div>
+  <div class="arriba">
+      <a class="icono" href="../index.html" style="float: left;">
+            <img src="img/vector.png" alt="">
+      </a>
+  </div>
+  <div class="flash">
+      <img src="img/flash.png" alt="">
+  </div>
+  <div class="abajo">
+      <div class="cent">
+          <div>
+              <a class="aiconos5" href="#">
+                  <img src="img/boton.png" alt="">
+              </a>
+              <hr>
+              <div id="div_file">
+          			<p id="texto">Gallery</p>
+          			<input type="file" accept="imatge/*" multiple="true" id="contingut">
+          		</div>
+          </div>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+    var contingut=document.getElementById('contingut');
+    var imatge=document.getElementsByTagName('img');
+    var desenfoque=document.getElementById('blur');
+
+
+      contingut.addEventListener('change', canvia);
+
+    function canvia(){
+      imatge[0].src=URL.createObjectURL(event.target.files[0]);
+      imatge[1].src=URL.createObjectURL(event.target.files[1]);
+    }
+
+  </script>
+
+</body>
+</html>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Open Sans;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.fondo {
+    position: fixed;
+    top: 8%;
+
+    height: 75%;
+    width: 100%;
+
+}
+.arriba {
+    position: fixed;
+    top: 0;
+    background-color: #C4C4C4;
+    height: 8%;
+    width: 100%;
+}
+.icono img{
+    position: fixed;
+    top: 1%;
+    height: 5%;
+}
+.uno {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 25%;
+    background-color: rgb(255,255,255,0.5)
+}
+.dos {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 65%;
+    background-color: rgb(255,255,255,0.5)
+}
+.tres {
+    position: fixed;
+    height: 100%;
+    z-index: -1;
+    left: 25%;
+    background-color: rgb(255,255,255,0.5)
+}
+.cuatro {
+    position: fixed;
+    height: 100%;
+    z-index: -1;
+    right: 25%;
+    background-color: rgb(255,255,255,0.5)
+}
+.flash {
+    position: fixed;
+    bottom: 10%;
+    height: 15%;
+    right: 5%;
+    transform: scale(1.3);
+}
+.abajo {
+    position: fixed;
+    bottom: 0;
+    background-color: #C4C4C4;
+    height: 20%;
+    width: 100%;
+}
+.boton img{
+    top: 20px;
+    margin: 0 auto;
+    height: 15%;
+    margin: 0 auto;
+}
+.aiconos5{
+    margin-top: 3%;
+}
+.cent{
+    position: fixed;
+    text-align: center;
+    bottom: 10%;
+    width: 100%;
+    height: 70px;
+}
+input#contingut{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}
+div#div_file{
+	position:relative;
+  text-decoration: none;
+  bottom: 10px;
+}
+
+
+</style>
