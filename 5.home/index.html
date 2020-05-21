@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppMood</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="red">
+    <meta name="theme-color" content="red">
+    <meta name="msapplication-navbutton-color" content="red">
+    <link rel="icon" sizes="192x92" href="img/logo.png">
+    <link rel="icon" sizes="512x512" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="stylesheet" href="estils.css">
+    <link rel="stylesheet" href="jquery.js">
+    <script src="jquery.js"></script>
+    <title>AppMood</title>
+ </head>
+<div id="cuerpo">
+	<header id="header"  >
+        <div id="movil">
+            <a href="#" id="menu_on">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="box">
+                <div class="container-1">
+                    <form style="margin-top: 1%;">
+                        <input type="search" id="search"/>
+                        <a href="#">
+                             <span class="icon">
+                                 <i class="fa fa-search"></i>
+                            </span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="pc">
+            <ul class="pc-ul">
+                <div class="menupc fuente" >
+                    <a class="na" href="../8.perfil/index.html">Perfil</a>
+                    <a class="na" href="../6.film/index.html">Films</a>
+                    <a class="na" href="../13.serie/index.html">Series</a>
+                    <a class="na" href="../12_book/index.html">Books</a>
+                    <a class="na" href="../14.music/index.html">Music</a>
+                    <a class="na" href="../1.login/index.html">Log Out</a>
+                </div>
+                <div class="box">
+                    <div class="container-1">
+                        <form style="margin-top: 1%;">
+                            <input type="search" id="search"/>
+                            <a href="#">
+                                 <span class="icon">
+                                     <i class="fa fa-search"></i>
+                                </span>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+        </header>
+
+        <nav>
+            <div class="nd fuente">
+                <a href="../8.perfil/index.html">Perfil</a>
+                <a href="#" class="menu_on" style="text-align: right;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <hr class="hr1">
+            <ul class="fuente">
+                <a class="na" href="../6.film/index.html">Films</a>
+                <a class="na" href="../13.serie/index.html">Series</a>
+                <a class="na" href="../12_book/index.html">Books</a>
+                <a class="na" href="../14.music/index.html">Music</a>
+            </ul>
+            <div class="nf fuente">
+                <a href="../1.login/index.html">Log Out</a>
+            </div>
+        </nav>
+	<section id="content">
+        <body>
+            <div class="todo" >
+                <hr class="hr1">
+                <div class="cat fuente">Hot</div>
+                <div class="foto">
+                    <div class="divfoto img0">
+                        <a class="afoto" href="music_4/index.html">
+                            <img class="im" src="images/Group 360.png" alt="">
+                        </a>
+                        <a class="afoto" href="serie_4/index.html">
+                            <img class="im" src="images/Group 112.png" alt="">
+                        </a>
+                        <a class="afoto" href="film_5/index.html">
+                            <img class="im" src="images/Group 142.png" alt="">
+                        </a>
+                        <a class="afoto" href="film_6/index.html">
+                            <img class="im" src="images/Group 196.png" alt="">
+                        </a>
+                        <a class="afoto" href="film_7/index.html">
+                            <img class="im" src="images/Group 243.png" alt="">
+                        </a>
+                        <a class="afoto" href="film_8/index.html">
+                            <img class="im" src="images/Group 293.png" alt="">
+                        </a>
+                        <a class="afoto" href="film_1/index.html">
+                            <img class="im" src="images/Group 338.png" alt="">
+                        </a>
+                        <a class="afoto" href="book_5/index.html">
+                            <img class="im" src="images/Group 138.png" alt="">
+                        </a>
+                        <a class="afoto pc1" href="music_5/index.html">
+                            <img class="im" src="images/Group 174.png" alt="">
+                        </a>
+                        <a class="afoto pc1" href="serie_1/index.html">
+                            <img class="im" src="images/Group 206.png" alt="">
+                        </a>
+                        <a class="afoto pc1" href="music_6/index.html">
+                            <img class="im" src="images/Group 267.png" alt="">
+                        </a>
+                        <a class="afoto pc1" href="book_6/index.html">
+                            <img class="im" src="images/Group 334.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="columnas" id="imgM">
+                    <div class="divcolumnas fuente">
+                        <a class="afoto" href="film_1/index.html">
+                            <img class="img1" src="images/Group 340.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                        <a class="afoto" href="serie_1/index.html">
+                            <img class="img1" src="images/Group 200.png" style="width:98.5%;"  alt="">
+                            <div class="a1 fuente">Serie</div>
+                        </a>
+                        <a class="afoto" href="film_2/index.html">
+                            <img class="img1" src="images/Group 94.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                        <a class="afoto" href="serie_2/index.html">
+                            <img class="img1" src="images/Group 205.png" style="width:98.5%;" alt="">
+                            <div class="a1 fuente">Serie</div>
+                        </a>
+                        <a class="afoto" href="film_3/index.html">
+                            <img class="img1" src="images/Group 290.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                        <a class="afoto" href="serie_3/index.html">
+                            <img class="img1" src="images/Group 251.png" style="width:98.5%;" alt="">
+                            <div class="a1 fuente">Serie</div>
+                        </a>
+
+                    </div>
+                    <div class="divcolumnas1 fuente">
+                        <a class="afoto" href="book_1/index.html">
+                            <img class="img1" src="images/Group 273.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                        <a class="afoto" href="music_1/index.html">
+                            <img class="img1" src="images/Group 164.png" alt="">
+                            <div class="a1 fuente">Music</div>
+                        </a>
+                        <a class="afoto" href="book_2/index.html">
+                            <img class="img1" src="images/Group 180.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                        <a class="afoto" href="music_2/index.html">
+                            <img class="img1" src="images/Group 365.png" alt="">
+                            <div class="a1 fuente">Music</div>
+                        </a>
+                        <a class="afoto" href="book_3/index.html">
+                            <img class="img1" src="images/Group 327.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                        <a class="afoto" href="music_3/index.html">
+                            <img class="img1" src="images/Group 123.png" alt="">
+                            <div class="a1 fuente">Music</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="columnas" id="imgP">
+                    <div class="divcolumnas fuente">
+                        <a class="afoto" href="film_1/index.html">
+                            <img class="img1" src="images/Group 340.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                        <a class="afoto" href="serie_1/index.html">
+                            <img class="img1" src="images/Group 200.png" style="width:98.5%;"  alt="">
+                            <div class="a1 fuente">Serie</div>
+                        </a>
+                        <a class="afoto" href="film_4/index.html">
+                            <img class="img1" src="images/Group 236.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                    </div>
+                    <div class="divcolumnas fuente">
+                        <a class="afoto" href="book_1/index.html">
+                            <img class="img1" src="images/Group 273.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                        <a class="afoto" href="music_1/index.html">
+                            <img class="img1" src="images/Group 164.png" alt="">
+                            <div class="a1 fuente">Music</div>
+                        </a>
+                        <a class="afoto" href="book_3/index.html">
+                            <img class="img1" src="images/Group 327.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                    </div>
+                    <div class="divcolumnas fuente">
+                        <a class="afoto" href="film_2/index.html">
+                            <img class="img1" src="images/Group 94.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                        <a class="afoto" href="serie_2/index.html">
+                            <img class="img1" src="images/Group 205.png" style="width:98.5%;"  alt="">
+                            <div class="a1 fuente">Serie</div>
+                        </a>
+                        <a class="afoto" href="film_3/index.html">
+                            <img class="img1" src="images/Group 290.png" alt="">
+                            <div class="a1 fuente">Film</div>
+                        </a>
+                    </div>
+                    <div class="divcolumnas1 fuente">
+                        <a class="afoto" href="book_2/index.html">
+                            <img class="img1" src="images/Group 180.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                        <a class="afoto" href="music_2/index.html">
+                            <img class="img1" src="images/Group 365.png" alt="">
+                            <div class="a1 fuente">Music</div>
+                        </a>
+                        <a class="afoto" href="book_4/index.html">
+                            <img class="img1" src="images/Group 229.png" alt="">
+                            <div class="a1 fuente">Book</div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="cent">
+                        <a class="icono" href="#">
+                            <img src="img/home.png" alt="">
+                        </a>
+                        <a class="icono" href="../15.camara/index.html">
+                            <img src="img/mas.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+    </section>
+</div>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$('#menu_on').click(function(){
+		   $('body').toggleClass('visible_menu');
+		 })
+         $('.menu_on').click(function(){
+		   $('body').toggleClass('visible_menu');
+		 })
+	});
+</script>
+</html>
+
+<style>
+body{
+    overflow:auto;
+    margin: 0px!important;
+}
+.fuente{
+    font-family: Open Sans;
+}
+#imgM{
+    display: block;
+}
+#movil{
+    display: block;
+    padding: 2%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+#imgP{
+    display: none;
+}
+#content{
+    display: inline-block;
+    margin-top: 11%;
+
+}
+.pc1{
+    display: none;
+}
+
+.visible_menu #menu_on>span:nth-child(1),.visible_menu .menu_on>span:nth-child(1){
+	transform: rotate(45deg) translate(-2px,1px);
+}
+
+.visible_menu span:nth-child(2){
+	opacity: 0;
+}
+
+.visible_menu nav{
+	left: 0;
+	opacity: 1;
+}
+#pc{
+    display:none;
+}
+.visible_menu #menu_on>span:nth-child(3),.visible_menu .menu_on>span:nth-child(3){
+	transform: rotate(-45deg) translate(-3px,3px);
+}
+nav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:-300px;
+	width: 67%;
+	z-index: 1;
+	background: #FFF;
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
+}
+nav ul{
+  padding: 2% 2% 0% 5%;
+}
+
+#menu_on{
+    top: 8px;
+    left: 9px;
+    float: left;
+  	width:30px;
+  	height: 20px;
+  	position: relative;
+    z-index: 2;
+
+}
+.menu_on{
+
+  	width:30px;
+  	height: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 35px;
+    left: 85%;
+}
+.cat{
+    text-align: left;
+    font-weight: 600;
+    margin: 4%;
+    margin-top: 5%;
+}
+
+#menu_on span,.menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #888;
+	transition: all 0.25s ease;
+	transform-origin : 0px 100%;
+}
+
+#menu_on span:nth-child(2),.menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+
+#menu_on span:nth-child(3),.menu_on span:nth-child(3){
+bottom: 0;
+}
+
+nav a{
+	display:block;
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+	transition: all ease 0.25s;
+}
+
+.nf{
+    position: absolute;
+    text-align: center;
+    bottom: 4px;
+    width: 100%;
+    border-top: solid 2px #ececec;
+}
+.visible_menu>div>header>div>#menu_on{
+    transition: all ease 0.9s;
+    left: 56%;
+    top: 25px;
+}
+.na{
+    padding: 12% 10px;
+}
+.nd{
+    padding: 14% 0% 0% 22px;
+}
+.nd>a{
+    padding: 0px;
+
+}
+#search{
+    padding: 2%;
+    width: 80%;
+}
+#search:focus{
+    border: none!important;
+    outline: none!important;
+}
+.container-1 input#search{
+  background: #eae7e7;
+  border: none;
+  color: #63717f;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.container-1 .icon{
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 6px;
+  color: #9d9e9e;
+  font-size: 18px;
+
+}
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.todo{
+    text-align:center;
+    width: 100%;
+    margin-top: 5%;
+    background-color: white;
+}
+#header{
+    text-align:center;
+    width: 100%;
+    background-color: white;
+}
+.hr1{
+    margin: 0 auto;
+    border:  0.5px solid #9B9999;
+}
+.foto{
+    margin: 1% auto 0% 0%;
+    overflow-x: auto;
+}
+.img1{
+    width: 100%;
+}
+.columnas{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+}
+.img0{
+    width: 195%;
+}
+.im{
+    width: 11%;
+    margin-right: 5px;
+}
+.divcolumnas{
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+}
+
+.divcolumnas1{
+    width: 45%;
+    margin: 2.5%;
+    float: right;
+}
+.a1{
+    margin-left: 8%;
+    margin-bottom: 30px;
+}
+.afoto{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    font-weight: 600;
+}
+.cent{
+    position: fixed;
+    background-color: white;
+    border-radius: 35px;
+    height: 40px;
+    padding: 1% 1%;
+    bottom: 30px;
+    text-align: center;
+    right: 37.5%;
+}
+.icono{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    margin: 0px 2px;
+}
+@media (min-width: 767px){
+    #content {
+        display: inline-block;
+        margin-top: 2%;
+    }
+    .pc1{
+        display: inline;
+    }
+
+    #movil,nav{
+        display: none;
+    }
+    .a1 {
+        font-size: medium;
+    }
+    #imgM{
+        display: none;
+    }
+    #imgP{
+        display: block;
+    }
+    .cat{
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 3.5%;
+
+    }
+    .img0 {
+        float: left;
+        text-align: left;
+        width: 140%;
+        margin: auto;
+        padding-left: 2%;
+    }
+    #pc{
+        display: block;
+        position: fixed;
+        width: 100%;
+
+    }
+    #content {
+        width: 100%;
+    }
+    .na {
+        text-decoration: none;
+        color: #000;
+        padding: 1% 1%;
+        align-items: center;
+        vertical-align: sub;
+    }
+    .pc-ul{
+        padding: 2.5% 1% 3.4% 1%;
+        margin-top: -15px;
+        background-color: white;
+        }
+    body {
+        display: block;
+        margin: 0px;
+    }
+    .cent {
+        position: fixed;
+        background-color: white;
+        border-radius: 35px;
+        height: 37px;
+        padding: 10px 5px;
+        padding-top: 5px;
+        bottom: 30px;
+        text-align: center;
+        right: 46.2%;
+    }
+    .todo {
+        text-align: center;
+        width: 100%;
+        margin-top: 0px;
+        display: inline-block;
+        margin-top: auto;
+    }
+    .im {
+        width: 7%;
+        margin-right: 5px;
+    }
+    .hr1{
+        display: none;
+    }
+    .divcolumnas1,.divcolumnas{
+        margin-top: 1%;
+    }
+    .divcolumnas {
+        width: 21%;
+        margin: 0% 2%;
+        float: left;
+    }
+    .divcolumnas1 {
+        width: 21%;
+        margin: 0% 2%;
+        float: right;
+    }
+    .menupc{
+        text-align: left;
+        float:left;
+        width: 50%;
+    }
+    .box{
+        width: 40%;
+        float: right;
+        margin-top: -1px;
+    }
+    .container-1 .icon {
+    margin-top: 2px;
+    }
+}
+    @media (min-width: 980px){
+        .na {
+            padding: 1% 3%;
+        }
+        .box {
+            margin-top: -10px;
+        }
+        .container-1 .icon {
+            margin-top: 6px;
+        }
+    }
+
+
+</style>
